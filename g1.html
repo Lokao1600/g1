@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.link > a {
+    margin: 10px;
+}
+
+.Nome {
+    display: flex;
+    text-align: center;
+}
+
+.Nome span {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: #C4170C;
+    color: white;
+    padding: 10px;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu span svg {
+    width: 25px;
+}
+
+.menu .g1 {
+    display: flex;
+    margin-left: 10px;
+}
+
+.lupa {
+    display: flex;
+    align-items: center;
+}
+
+.lupa input {
+    display: flex;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #00000026;
+    text-align: center;
+}
+.lupa input::placeholder {
+    color: white;
+}
+
+.Subnav {
+    background-color: #B0150B;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-left: -8em;
+}
+
+main {
+    margin: auto;
+    width: 750px;
+}
+
+.cima {
+    display: flex;
+    gap: 30px;
+    margin-top: 2em;
+}
+
+.cima img {
+    width: 5em;
+    border-radius: 50px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texto span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.texto1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.texto1 h1 {
+    font-size: 2.5em;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.logo-facebook, .logo-whats, .logo-instagram {
+    display: flex;
+    background-color: #F5F6F7;
+    padding: 10px 3em;
+    border-radius: 20px;
+}
+
+.icons, ion-icon{
+    font-size: 30px;
+}
+
+.logo-facebook {
+    color: #0866FF;
+}
+
+.logo-facebook:hover {
+    color: white;
+    background-color: #0866FF;
+}
+
+.logo-whats {
+    color: #0DCA54;
+}
+
+.logo-whats:hover {
+    color: white;
+    background-color: #0DCA54;
+}
+
+.logo-instagram {
+    color: #4F5257;
+}
+
+.logo-instagram:hover {
+    color: white;
+    background-color: #4F5257;
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.texto2 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.texto2 a {
+    position: relative;
+    color: #C4170C;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.texto2 a::after {
+    content: '';
+    position: absolute;
+    background: #C4170C;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    bottom: -3px;
+    transform: scaleX(0);
+}
+
+.texto2 a:hover::after {
+    transform: scaleX(1);
+}
+
+.texto2 h2 a {
+    font-size: 16px;
+}
+
+.borda {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #CED1D7;
+    border-bottom: 1px solid #CED1D7;
+    position: relative;
+}
+
+.borda::before {
+    border-top: 4.5px solid #C4170C;
+    border-bottom: 4.5px solid #C4170C;
+    bottom: 0;
+    content: "";
+    left: calc(50% - 60px);
+    position: absolute;
+    top: 0;
+    width: 120px;
+}
+
+.borda p {
+    display: flex;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="link">
+            <a href="#" style="color: #2EB0F3;">globo.com</a>
+            <a href="#" style="color: #C4170C;">g1</a>
+            <a href="#" style="color: #06AA48;">ge</a>
+            <a href="#" style="color: #FF6700;">gshow</a>
+            <a href="#" style="color: #FB0334;">globoplay</a>
+            <a href="#" style="color: #C4170C;">g1 jogos</a>
+            <a href="#" style="color: #1E4CA3;">o globo</a>
+        </div>
+        <div class="Nome">
+            <img class="button-login-img" alt="Perfil do usuário" src="https://lh3.googleusercontent.com/a/ACg8ocKk8tclDoijb0gZJQDBg3Zi14M0JF7oBLG4pMJ0gsaGUdBVtg=s96-c" style="font-size: 10px; height: 25px; border-radius: 25px;">
+            <span>Leandro Oliveira</span>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 6H6m12 4H6m12 4H6m12 4H6"/>
+            </svg>
+            <span>Menu</span>              
+            <span class="g1">
+                <svg fill="none" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg"><path d="M30.167 4.866L38.12.134C38.99-.295 40 .345 40 1.512V30.31c0 .54-.585 1.133-1.307 1.133h-3.655a1.315 1.315 0 01-1.306-1.323V9.352l-2.444 1.458c-.868.426-1.855-.237-1.855-1.213V6.055c0-.507.285-.968.734-1.19zM14.11 25.831c-3.246 0-5.977-2.607-5.977-6.415 0-3.86 2.73-6.416 5.977-6.416 3.246 0 5.925 2.555 5.925 6.416 0 3.808-2.68 6.415-5.925 6.415zm7.368-18.463c-.773 0-1.236.469-1.236 1.251v1.356c-1.392-1.722-3.968-3.026-6.545-3.026C7.411 6.95 2 12.374 2 19.467c0 7.094 5.1 11.997 11.542 11.997a8.67 8.67 0 006.389-2.764c-.05 4.954-2.627 7.198-7.059 7.198-2.37 0-4.586-.731-7.161-2.4-.67-.469-1.443-.313-1.804.418L2.36 36.993c-.36.73-.257 1.408.464 1.877C6.02 40.956 9.782 42 13.028 42c8.502 0 13.19-4.643 13.19-15.335V8.62c0-.782-.463-1.251-1.236-1.251h-3.504z" fill="#fff"></path></svg>
+            </span>
+        </div>
+
+        <div class="titulo">
+            <h1>Mundo</h1>
+        </div>
+
+        <div class="lupa">
+                <svg fill="#fff" class="search-icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>;
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                </svg>
+            <input type="search" placeholder="BUSCAR">
+        </div>
+    </nav>
+    <div class="Subnav">
+        <p>BLOG DA SANDRA COHEN</p>
+    </div>
+
+    <main>
+        <div class="cima">
+            <img decoding="async" alt="TOPO" src="https://s2-g1.glbimg.com/W9Kv3pRNTCrHaHrhZ5_f0xiwOVE=/80x80/smart/filters:strip_icc()/s2-g1.glbimg.com/6n4jB88ZaPs9KdqWcxqxezK6feY%3D/137x10%3A395x268/https%3A//i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/Z/d/qYQLlvRmO2qO0oLqR1ig/selos-feed-sandra-cohen-1-.jpg" class="i-amphtml-fill-content i-amphtml-replaced-content">
+            <div class="texto">
+                <span>Por Sandra Cohen</span>
+                <p>Especializada em temas internacionais, foi repórter, correspondente e editora de Mundo em 'O Globo'</p>
+            </div>
+        </div>
+
+        <div class="texto1">
+            <h1>Derrotado pela oposição, Maduro toma posse pela força bruta e sem legitimidade internacional</h1>
+            <p>Regime perpetua o desalinho político na Venezuela, com recrudescimento da repressão e sem perspectivas de pacificação com seus opositores.</p>
+            <p>10/01/2025 07h54  Atualizado há 7 horas</p>
+        </div>
+
+        <div class="icons">
+            <div class="logo-facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <div class="logo-whats">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <div class="logo-instagram">
+                <ion-icon name="git-branch-outline"></ion-icon>
+            </div>
+        </div>
+
+        <div class="img">
+            <img decoding="async" sizes="(max-width: 2560px) 648px, 100vw" alt="Homem caminha a frente de mural com a imagem de Nicolás Maduro em Caracas, na Venezuela — Foto: Federico Parra/AFP" srcset="https://s2-g1.glbimg.com/giYLb0epwsQzZYHBd6k5w-DrQts=/0x0:1024x682/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/H/A/3VTlpMQQGMvWJu5nLZAQ/000-36tb6da.jpg 1000w, https://s2-g1.glbimg.com/G5Pz6DRAGYlUrVcC-NqwYK2HlVE=/0x0:1024x682/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/H/A/3VTlpMQQGMvWJu5nLZAQ/000-36tb6da.jpg 984w, https://s2-g1.glbimg.com/U9VZdEu2e-bR_rJTJcc16EihyzY=/0x0:1024x682/640x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/H/A/3VTlpMQQGMvWJu5nLZAQ/000-36tb6da.jpg 640w, https://s2-g1.glbimg.com/Q54qhXTkmCygekI7Gy8v2oU_Kt8=/0x0:1024x682/600x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/H/A/3VTlpMQQGMvWJu5nLZAQ/000-36tb6da.jpg 600w" src="https://s2-g1.glbimg.com/G5Pz6DRAGYlUrVcC-NqwYK2HlVE=/0x0:1024x682/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/H/A/3VTlpMQQGMvWJu5nLZAQ/000-36tb6da.jpg" class="i-amphtml-fill-content i-amphtml-replaced-content">
+            <p>Homem caminha a frente de mural com a imagem de Nicolás Maduro em Caracas, na Venezuela — Foto: Federico Parra/AFP</p>
+        </div>
+
+        <div class="texto2">
+            <p>Como bem definiu o escritor Alberto Barrera Tyszka, os venezuelanos vivem em permanente situação pré-apocalíptica. “Nossa história está sempre à beira de explodir”, escreveu em artigo no “El País”. Dessa forma, sem legitimidade internacional e com o respaldo apenas de regimes autocráticos,<a href="#">Nicolás Maduro rola o jogo de mais um mandato, o terceiro</a>, mas com uma diferença: <a href="">derrotado pela oposição, toma posse pela força bruta</a>, esnobado pela grande maioria dos países do continente e pela União Europeia.</p>
+
+            <h2><a href="#">✅ Clique aqui para seguir o canal de notícias internacionais do g1 no WhatsApp</a></h2>
+
+            <p>A <a href="#">Venezuela</a> se encontra no habitual desalinho político e novamente com dois postulantes ao comando do país. O ditador se escora no aparelho repressor e no apoio de Rússia e China para levar adiante a falta de transparência nas eleições em que se proclamou vencedor, <a href="#">sem apresentar um único boletim de votação</a>. Renova as <a href="#">ameaças de prender o adversário Edmundo González Urrutia</a>, se ele pisar em solo venezuelano nesta sexta-feira. As fronteiras do país foram fechadas até segunda-feira.</p>
+
+            <p>O regime venezuelano acusou, com medidas risíveis, o incômodo ao desafio de González, que prometeu retornar ao país para ser empossado presidente. <a href="#">Ofereceu a recompensa de US$ 100 mil para quem oferecer informações sobre o paradeiro do opositor</a>, enquanto ele circulava livremente por Argentina, Uruguai, EUA, República Dominicana e Panamá em busca de apoio.</p>
+
+            <p>Diosdado Cabello, o número dois do chavismo e agora ministro do Interior, exibiu cartazes com nomes e fotos de sete ex-presidentes do continente com o alerta “Procurado”. Eles serão acusados de invasão e de crimes de conspiração e atos terroristas, se acompanharem González no retorno ao país.</p>
+
+            <p>Nos últimos dias, o regime intensificou a repressão e fortificou o país. <a href="#">O genro de González está desaparecido</a>, sequestrado quando levava os dois filhos à escola. O ex-candidato presidencial Enrique Márquez e o jornalista Carlos Correa, que dirige a ONG Espacio Público, encabeçam a mais recente lista de presos.</p>
+
+            <p>Ainda assim, o medo não afastou os venezuelanos das ruas para protestar contra esta nova posse de Maduro. A líder <a href="#">María Corina Machado</a> cumpriu o prometido e reapareceu numa das manifestações, em Chacao, após 130 dias na clandestinidade.</p>
+        </div>
+
+        <div class="borda">
+            <p>“O regime entrou em colapso. Aconteça o que acontecer, eles acabarão se enterrando. Que ninguém tenha dúvida, o que fizerem, será o fim do regime”, sentenciou María Corina.</p>
+        </div>
+
+        <div class="texto2">
+            <p>Num episódio confuso, mas típico do permanente cenário pré-apocalíptico descrito pelo escritor Alberto Barrera Tyszka, <a href="#">ela teria sido sequestrada por forças de segurança e depois liberada</a>.</p>
+
+            <p>Baluartes de Maduro, como o ministro Cabello e o procurador-geral Tarek William Saab, se apressaram a declarar que tudo não passou de uma encenação de opositores. A essa altura do jogo, sem qualquer perspectiva de pacificação no horizonte, a integridade de María Corina Machado e González é também um ativo valioso para o regime.</p>
+        </div>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
